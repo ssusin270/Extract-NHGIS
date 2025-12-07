@@ -62,5 +62,8 @@ Execute `mk_nhgis_example.py` (or your own program).
 
 The created variables (e.g., `acs['medage']`) are numeric and have dictionary variable labels attached (e.g., `acs['medage'].attrs['label']`).
 
+## Contact
 
-### Contact: [Scott Susin](mailto:systemic.insight@gmail.com)
+For questions, suggestions, or issues, please contact:
+- **Email**: [Scott Susin](mailto:systemic.insight@gmail.com)
+- **GitHub Issues**: [Report a bug or request a feature](https://github.com/ssusin270/Extract-NHGIS/issues)
