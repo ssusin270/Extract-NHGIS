@@ -14,7 +14,7 @@ Get an [API key from iPUMS](https://developer.ipums.org/docs/v2/get-started/).
 
 ### 2. Install required 
 
-Install ipumspy, pandas, pathlib, and zipfile if necessary
+Install ipumspy and pandas if necessary
 
 ### 3. Download Required Files
 
