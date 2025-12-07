@@ -12,11 +12,15 @@ I've found extracting multiple years of ACS aggregate data to be tedious, becaus
 
 Get an [API key from iPUMS](https://developer.ipums.org/docs/v2/get-started/).
 
-### 2. Download Required Files
+### 2. Install required 
+
+Install ipumspy, pandas, pathlib, and zipfile if necessary
+
+### 3. Download Required Files
 
 Download `extract_nhgis_agg.py` and `mk_nhgis_example.py`. These programs should either be in the same directory, or `extract_nhgis_agg.py` should be in your path.
 
-### 3. Configure Parameters
+### 4. Configure Parameters
 
 Modify the parameters for your use case, specifying the dataset and the tables to extract, then call the `get_nhgis()` function. For example:
 ```python
@@ -37,7 +41,7 @@ acs, source_to_nhgis, nhgis_to_vars = get_nhgis(
 )
 ```
 
-### 4. Extract Variables
+### 5. Extract Variables
 
 Add code to extract particular variables. For example:
 ```python
@@ -47,12 +51,13 @@ create_nhgis_var(acs, 'medage', 'B01002', 'E001', source_to_nhgis, nhgis_to_vars
 Where:
 - `'B01002'` is the table name
 - `'E001'` is one item (variable) from the table
-- `acs` (a pandas DataFrame), `source_to_nhgis` (a dictionary), and `nhgis_to_vars` (a dictionary) are outputs returned by `get_nhgis()`
+- `acs` (a pandas DataFrame returned by `get_nhgis()`) is the dataset being created
+- `source_to_nhgis` and `nhgis_to_vars` are dictionaries returned by `get_nhgis()`.  They need to be passed to create_nhgis_var() but aren't otherwise necessary.
 
-### 5. Run the Program
+### 6. Run the Program
 
 Execute `mk_nhgis_example.py` (or your own program).
 
-### 6. Access the Results
+### 7. Access the Results
 
 The created variables (e.g., `acs['medage']`) are numeric and have dictionary variable labels attached (e.g., `acs['medage'].attrs['label']`).
