@@ -4,7 +4,7 @@ A program to extract [iPUMS NHGIS](https://www.nhgis.org/) aggregate Census data
 
 ## Overview
 
-I've found extracting multiple years of ACS aggregate data to be tedious, because NHGIS gives arbitrary names to the variables in each data file that aren't consistent across years. This program allows variables to be specified using Census table numbers rather than NHGIS names.
+The IPUMS National Historical Geographic Information System (NHGIS) provides a vast collection of U.S. Census Bureau data and its interface is by far the most convenient way to access the data.  However, extracting multiple years of aggregate data can be tedious, because NHGIS variable names often aren't consistent across years. This program allows variables to be specified using Census table numbers rather than NHGIS names.
 
 ## Usage
 
