@@ -61,3 +61,6 @@ Execute `mk_nhgis_example.py` (or your own program).
 ### 7. Access the Results
 
 The created variables (e.g., `acs['medage']`) are numeric and have dictionary variable labels attached (e.g., `acs['medage'].attrs['label']`).
+
+
+### Contact: [Scott Susin](mailto:systemic.insight@gmail.com)
