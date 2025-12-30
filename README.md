@@ -12,7 +12,7 @@ The IPUMS National Historical Geographic Information System (NHGIS) provides a v
 
 Get an [API key from iPUMS](https://developer.ipums.org/docs/v2/get-started/).
 
-### 2. Install required 
+### 2. Install Required Packages
 
 Install ipumspy and pandas if necessary
 
